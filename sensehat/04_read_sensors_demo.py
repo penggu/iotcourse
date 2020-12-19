@@ -16,7 +16,9 @@ def do_readings(sense):
             bg = (100, 0, 0) # red
             tc = (200, 200, 0) # yellow
         msg = f"Temperature = {t}, Pressure = {p}, Humidity = {h}"
+        msg2 = f"温度 = {t}, 气压 = {p}, 湿度 = {h}"
         sense.show_message(msg, scroll_speed=0.08, back_colour=bg, text_colour=tc)
+        print(msg2)
 
 def show_sensor_readings():
     sense = SenseHat()
